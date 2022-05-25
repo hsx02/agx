@@ -25,3 +25,6 @@ allow init vendor_sysfs_scsi_host:file w_file_perms;
 # Allow init to wrtie to sysfs_battery_supply
 allow init sysfs_battery_supply:file { setattr };
 
+# Dolby
+allow init vendor_data_file:file lock;
+allow init hal_audio_default:binder call;
